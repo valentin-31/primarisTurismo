@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Primaris Turismo</title>
+    <link rel="stylesheet" href="stylesAbout.css">
+</head>
+<body>
+    <header>
+        <h1>Primaris Turismo</h1>
+    </header>
+    <div class="content-wrapper">
+        <main>
+
+            <button onclick="window.location.href='index.html'" class="back-button">Volver</button>
+
+            <!-- Contenedor de las tarjetas de información -->
+            <section class="info-grid">    
+                <!-- Tarjeta 1: Historia de la Empresa -->
+                <div class="info-card" onclick="openModal('modal-historia')">
+                    <h2>Historia de la Empresa</h2>
+                </div>
+
+                <!-- Tarjeta 2: Misión -->
+                <div class="info-card" onclick="openModal('modal-mision')">
+                    <h2>Misión</h2>
+                </div>
+
+                <!-- Tarjeta 3: Visión -->
+                <div class="info-card" onclick="openModal('modal-vision')">
+                    <h2>Visión</h2>
+                </div>
+
+                <!-- Tarjeta 4: Valores de la Empresa -->
+                <div class="info-card" onclick="openModal('modal-valores')">
+                    <h2>Valores de la Empresa</h2>
+                </div>
+
+                <!-- Tarjeta 5: Análisis FODA - Fortalezas -->
+                <div class="info-card" onclick="openModal('modal-fortalezas')">
+                    <h2>FODA - Fortalezas</h2>
+                </div>
+
+                <!-- Tarjeta 6: Análisis FODA - Oportunidades -->
+                <div class="info-card" onclick="openModal('modal-oportunidades')">
+                    <h2>FODA - Oportunidades</h2>
+                </div>
+
+                <!-- Tarjeta 7: Análisis FODA - Debilidades -->
+                <div class="info-card" onclick="openModal('modal-debilidades')">
+                    <h2>FODA - Debilidades</h2>
+                </div>
+
+                <!-- Tarjeta 8: Análisis FODA - Amenazas -->
+                <div class="info-card" onclick="openModal('modal-amenazas')">
+                    <h2>FODA - Amenazas</h2>
+                </div>
+
+                <!-- Tarjeta 9: Áreas Funcionales -->
+                <div class="info-card" onclick="openModal('modal-areas')">
+                    <h2>Áreas Funcionales</h2>
+                </div>
+            </section>
+    
+            <!-- Modales de Contenido -->
+                <!-- Modal 1: Historia de la Empresa -->
+            <div id="modal-historia" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-historia')">&times;</span>
+                    <h2>Historia de la Empresa</h2>
+                    <p>Primaris Turismo se creó con el objetivo de conectar turistas con las experiencias únicas de Chilecito. Nuestro compromiso es impulsar la economía regional promoviendo a los artesanos y servicios locales.</p>
+                </div>
+            </div>
+
+            <!-- Modal 2: Misión -->
+            <div id="modal-mision" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-mision')">&times;</span>
+                    <h2>Misión</h2>
+                    <p>Conectar a turistas con las experiencias locales de Chilecito, facilitando el acceso a información sobre lugares turísticos, actividades, hospedajes y productos artesanales, contribuyendo al desarrollo económico y cultural de la región.</p>
+                </div>
+            </div>
+
+            <!-- Modal 3: Visión -->
+            <div id="modal-vision" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-vision')">&times;</span>
+                    <h2>Visión</h2>
+                    <p>Ser la plataforma digital líder en la promoción del turismo local y en la comercialización de productos artesanales, generando un impacto positivo en la economía de Chilecito y posicionando la ciudad como un destino turístico sostenible y reconocido a nivel nacional.</p>
+                </div>
+            </div>
+
+            <!-- Modal 4: Valores de la Empresa -->
+            <div id="modal-valores" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-valores')">&times;</span>
+                    <h2>Valores</h2>
+                    <ul>
+                        <li><strong>Innovación:</strong> Promovemos la creatividad en nuestros servicios para brindar la mejor experiencia a turistas y emprendedores.</li>
+                        <li><strong>Colaboración:</strong> Trabajamos junto a artesanos y proveedores para construir una comunidad próspera.</li>
+                        <li><strong>Transparencia:</strong> Actuamos con integridad y claridad en nuestras relaciones.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal 5: Fortalezas -->
+            <div id="modal-fortalezas" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-fortalezas')">&times;</span>
+                    <h2>Análisis FODA - Fortalezas</h2>
+                    <p>Contamos con un equipo especializado en turismo y relaciones directas con proveedores locales, lo que nos permite ofrecer experiencias auténticas y de calidad a nuestros clientes.</p>
+                </div>
+            </div>
+
+            <!-- Modal 6: Oportunidades -->
+            <div id="modal-oportunidades" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-oportunidades')">&times;</span>
+                    <h2>Análisis FODA - Oportunidades</h2>
+                    <p>La colaboración con entidades locales y el crecimiento del e-commerce nos abren puertas para expandir nuestro alcance y visibilidad en el mercado turístico digital.</p>
+                </div>
+            </div>
+
+            <!-- Modal 7: Debilidades -->
+            <div id="modal-debilidades" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-debilidades')">&times;</span>
+                    <h2>Análisis FODA - Debilidades</h2>
+                    <p>Nuestros recursos son limitados y dependemos de terceros. Además, como una empresa nueva, carecemos de experiencia en el mercado, lo que puede ser un desafío en el proceso de crecimiento.</p>
+                </div>
+            </div>
+
+            <!-- Modal 8: Amenazas -->
+            <div id="modal-amenazas" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-amenazas')">&times;</span>
+                    <h2>Análisis FODA - Amenazas</h2>
+                    <p>Competimos con grandes empresas establecidas en el sector y dependemos del turismo, lo que nos expone a fluctuaciones en la demanda de servicios turísticos.</p>
+                </div>
+            </div>
+
+            <!-- Modal 9: Áreas Funcionales -->
+            <div id="modal-areas" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-areas')">&times;</span>
+                    <h2>Áreas Funcionales</h2>
+                    <ul>
+                        <li><strong>Marketing y Ventas:</strong> Promoción de la plataforma y atención al cliente.</li>
+                        <li><strong>Operaciones:</strong> Gestión del contenido, relación con clientes y actualización de información sobre servicios turísticos.</li>
+                        <li><strong>Administración y Finanzas:</strong> Gestión de los recursos financieros y administrativos.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 valentin-31 
+            <a href="https://github.com/valentin-31" target="_blank">
+                <img src="assets/github-mark-white.png" alt="GitHub Logo" class="github-logo">
+            </a>
+        </p>
+    </footer>
+    <script src="scriptAbout.js"></script>
+</body>
+</html>

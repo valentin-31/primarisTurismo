@@ -1,0 +1,348 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado y Navegación */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #3a86ff;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    padding: 30px 20px; /* Aumenta el padding superior para separar el contenido del encabezado */
+    background: url('assets/banner2.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    margin-top: 50px; /* Da espacio adicional para el encabezado fijo */
+    height: 280px;
+}
+
+/* Contenido Principal */
+.contenido-principal {
+    margin-top: 300px; /* Coincide con la altura del banner */
+}
+
+/* Servicios */
+.services {
+    padding: 40px;
+    text-align: center;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Modales */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Destinos Turísticos */
+.destinations {
+    padding: 40px;
+    background-color: #F0F4F8; /* Azul grisáceo claro */
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px; /* Bordes redondeados para un efecto visual suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacarlo del fondo */
+}
+
+.destinations iframe {
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    max-width: 600px; /* Limitar el ancho máximo */
+    height: 450px;
+    border: none;
+    display: block;
+    margin: 0 auto; /* Centrar el iframe */
+}
+
+.destinations h2 {
+    color: #1A3C56; /* Azul Marino para el título */
+    margin-bottom: 20px;
+}
+
+.map-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.map-container {
+    flex: 1 1 300px; /* Ancho mínimo de 300px */
+    max-width: 600px;
+    text-align: center;
+    background-color: white; /* Fondo blanco para las tarjetas individuales */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para cada mapa */
+}
+
+/* Testimonios */
+.testimonials {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 20px auto;
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+    max-width: 500px;
+}
+
+/* Sección de Contacto */
+.contact {
+    padding: 40px;
+    background-color: #F0F4F8; /* Fondo azul grisáceo claro */
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contact h2 {
+    color: #1A3C56; /* Azul Marino */
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: white; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto; /* Centrar el formulario */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+}
+
+.contact-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #5A8CA4; /* Azul Claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #6B8E23; /* Verde Bosque */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.github-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.github-logo:hover {
+    transform: scale(1.2);
+}
+
+/* COLORES DE LA PAGINA */
+header {
+    background-color: #1A3C56; /* Azul Marino */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #5A8CA4; /* Azul Claro */
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #5A8CA4; /* Azul Claro */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #6B8E23; /* Verde Bosque */
+}
+
+.service-card {
+    border: 1px solid #5A8CA4; /* Azul Claro */
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    background-color: #1A3C56; /* Azul Marino */
+    color: white;
+}
+
+.testimonials {
+    padding: 40px;
+    background-color: #F4F4F4; /* Gris Claro */
+    text-align: center;
+}
+
+.footer {
+    background-color: #1A3C56; /* Azul Marino */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #5A8CA4; /* Azul Claro */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #6B8E23; /* Verde Bosque */
+}
+
+/* Estructura general para un footer sticky */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1; /* Permite que este contenedor ocupe el espacio disponible */
+}
+
+/* Footer sticky */
+.footer {
+    background-color: #1A3C56; /* Azul Marino */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    flex-shrink: 0; /* Evita que el footer se reduzca */
+}
+
+.footer a {
+    color: #5A8CA4; /* Azul Claro */
+    text-decoration: none;
+}
+
+.github-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.github-logo:hover {
+    transform: scale(1.2);
+}
