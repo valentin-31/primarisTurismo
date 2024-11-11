@@ -10,6 +10,7 @@
 
     <!-- Encabezado y Navegación -->
     <header>
+        <!-- Menú para computadoras (visible en pantallas grandes) -->
         <nav class="navbar">
             <a href="#home">Inicio</a>
             <a href="#services">Servicios</a>
@@ -18,7 +19,21 @@
             <a href="#contact">Contacto</a>
             <a href="about.html">Nosotros</a>
         </nav>
+
+        <!-- Menú hamburguesa y menú deslizante para móviles -->
+        <button id="menu-toggle" class="menu-toggle">&#9776;</button> <!-- Botón Hamburguesa -->
+        <div id="side-nav" class="side-nav">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+            <a href="#home">Inicio</a>
+            <a href="#services">Servicios</a>
+            <a href="#destinations">Destinos</a>
+            <a href="#testimonials">Testimonios</a>
+            <a href="#contact">Contacto</a>
+            <a href="about.html">Nosotros</a>
+        </div>
     </header>
+
+    
 
      <!-- Contenedor principal -->
      <div class="content-wrapper">
@@ -146,6 +161,6 @@
     </footer>
     
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

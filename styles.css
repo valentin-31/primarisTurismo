@@ -4,6 +4,22 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1; /* Permite que este contenedor ocupe el espacio disponible */
+}
+
+/* Colores Generales */
+:root {
+    --azul-marino: #1A3C56;
+    --azul-claro: #5A8CA4;
+    --verde-bosque: #6B8E23;
+    --gris-claro: #F4F4F4;
+    --gris-azulado: #F0F4F8;
 }
 
 /* Encabezado y Navegación */
@@ -11,7 +27,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--azul-marino);
     padding: 10px 0;
     z-index: 1000;
 }
@@ -30,44 +46,49 @@ header {
 }
 
 .navbar a:hover {
-    background-color: #3a86ff;
+    background-color: var(--azul-claro);
     border-radius: 5px;
 }
 
 /* Banner */
 .banner {
-    padding: 30px 20px; /* Aumenta el padding superior para separar el contenido del encabezado */
+    padding: 30px 20px;
     background: url('assets/banner2.png') no-repeat center center/cover;
     color: white;
     text-align: center;
-    margin-top: 50px; /* Da espacio adicional para el encabezado fijo */
+    margin-top: 50px;
     height: 280px;
 }
 
 /* Contenido Principal */
 .contenido-principal {
-    margin-top: 300px; /* Coincide con la altura del banner */
+    margin-top: 300px;
 }
 
 /* Servicios */
-.services {
+.services, .destinations, .contact {
     padding: 40px;
     text-align: center;
+    background-color: var(--gris-azulado);
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-card {
-    border: 1px solid #ddd;
+    border: 1px solid var(--azul-claro);
     border-radius: 8px;
     margin: 10px auto;
     padding: 20px;
     width: 80%;
     max-width: 400px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .service-card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+    transform: scale(1.05);
+    background-color: var(--azul-marino);
+    color: white;
 }
 
 /* Modales */
@@ -104,27 +125,18 @@ header {
 }
 
 /* Destinos Turísticos */
-.destinations {
-    padding: 40px;
-    background-color: #F0F4F8; /* Azul grisáceo claro */
-    text-align: center;
-    margin: 20px 0;
-    border-radius: 8px; /* Bordes redondeados para un efecto visual suave */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacarlo del fondo */
+.destinations h2, .contact h2 {
+    color: var(--azul-marino);
+    margin-bottom: 20px;
 }
 
 .destinations iframe {
-    width: 100%; /* Ocupar todo el ancho del contenedor */
-    max-width: 600px; /* Limitar el ancho máximo */
+    width: 100%;
+    max-width: 600px;
     height: 450px;
     border: none;
     display: block;
-    margin: 0 auto; /* Centrar el iframe */
-}
-
-.destinations h2 {
-    color: #1A3C56; /* Azul Marino para el título */
-    margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 .map-section {
@@ -135,19 +147,19 @@ header {
 }
 
 .map-container {
-    flex: 1 1 300px; /* Ancho mínimo de 300px */
+    flex: 1 1 300px;
     max-width: 600px;
     text-align: center;
-    background-color: white; /* Fondo blanco para las tarjetas individuales */
+    background-color: white;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para cada mapa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Testimonios */
 .testimonials {
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: var(--gris-claro);
     text-align: center;
 }
 
@@ -159,28 +171,14 @@ header {
     max-width: 500px;
 }
 
-/* Sección de Contacto */
-.contact {
-    padding: 40px;
-    background-color: #F0F4F8; /* Fondo azul grisáceo claro */
-    text-align: center;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-.contact h2 {
-    color: #1A3C56; /* Azul Marino */
-    margin-bottom: 20px;
-}
-
+/* Formulario de Contacto */
 .contact-form {
-    background-color: white; /* Fondo blanco para el formulario */
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     max-width: 600px;
-    margin: 0 auto; /* Centrar el formulario */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
@@ -201,7 +199,7 @@ header {
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #5A8CA4; /* Azul Claro */
+    background-color: var(--azul-claro);
     color: white;
     border: none;
     border-radius: 5px;
@@ -209,26 +207,26 @@ header {
 }
 
 .contact-form button:hover {
-    background-color: #6B8E23; /* Verde Bosque */
+    background-color: var(--verde-bosque);
 }
 
 /* Footer */
 .footer {
-    background-color: #333;
+    background-color: var(--azul-marino);
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 0.9em;
+    flex-shrink: 0;
 }
 
 .footer a {
-    color: white;
+    color: var(--azul-claro);
     text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--verde-bosque);
 }
 
 .github-logo {
@@ -236,15 +234,216 @@ header {
     height: 20px;
     vertical-align: middle;
     margin-left: 5px;
+    transition: transform 0.3s;
 }
 
 .github-logo:hover {
     transform: scale(1.2);
 }
 
-/* COLORES DE LA PAGINA */
-header {
-    background-color: #1A3C56; /* Azul Marino */
+/* TEST CEL */
+/* Estilos Responsivos para Dispositivos Móviles */
+@media (max-width: 768px) {
+
+    /* Ajustes para el Header y Navegación */
+    header {
+        padding: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajuste para el Banner */
+    .banner {
+        height: 200px;
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    /* Servicios */
+    .services, .destinations, .contact {
+        padding: 20px 10px;
+        margin: 10px 0;
+    }
+
+    .service-card {
+        width: 100%; /* Ocupa todo el ancho disponible en móviles */
+        max-width: none;
+        margin: 10px 0;
+    }
+
+    /* Modales */
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+        font-size: 0.9em;
+        margin: auto;
+    }
+
+    /* Ajustes para la Sección de Mapas en Destinos */
+    .map-section {
+        flex-direction: column;
+    }
+
+    .map-container {
+        flex: 1;
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Testimonios */
+    .testimonials {
+        padding: 20px;
+    }
+
+    .testimonial {
+        max-width: 100%;
+        padding-left: 5px;
+    }
+
+    /* Formulario de Contacto */
+    .contact-form {
+        padding: 15px;
+        margin: 0 10px;
+    }
+
+    .contact-form label {
+        font-size: 0.9em;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9em;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 15px 0;
+        font-size: 0.9em;
+    }
+
+    .github-logo {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Header en Pantallas Grandes */
+.navbar .menu-items {
+    display: flex;
+    gap: 20px;
+}
+
+/* Botón de menú en móviles */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilos Responsivos para el Menú en Móviles */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.8em;
+        color: white;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .menu-items {
+        display: none; /* Oculta el menú por defecto en móviles */
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: var(--azul-marino);
+        padding: 10px 0;
+    }
+
+    .menu-items a {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Muestra el menú cuando el navbar tiene la clase 'active' */
+    .navbar.active .menu-items {
+        display: flex;
+    }
+}
+
+/* Botón de menú (hamburguesa) */
+.menu-toggle {
+    font-size: 1.8em;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 1001;
+    position: fixed;
+}
+
+/* Menú deslizante (oculto por defecto) */
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--azul-marino);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+/* Enlaces del menú deslizante */
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Cerrar el menú deslizante */
+.side-nav .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 2em;
+    color: white;
+}
+
+/* Mostrar el menú deslizante */
+.side-nav.open {
+    width: 250px;
+}
+
+/* Menú de navegación tradicional para computadoras */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--azul-marino);
 }
 
 .navbar a {
@@ -255,94 +454,69 @@ header {
 }
 
 .navbar a:hover {
-    background-color: #5A8CA4; /* Azul Claro */
+    background-color: var(--azul-claro);
     border-radius: 5px;
 }
 
-.contact button {
-    padding: 10px;
-    background-color: #5A8CA4; /* Azul Claro */
-    color: white;
-    border: none;
-    cursor: pointer;
+/* Ocultar el menú deslizante y el botón hamburguesa en pantallas grandes */
+.menu-toggle{
+    display: none;
 }
 
-.contact button:hover {
-    background-color: #6B8E23; /* Verde Bosque */
-}
+/* Mostrar el menú tradicional en pantallas grandes */
+@media (max-width: 768px) {
+    /* Ocultar la barra de navegación tradicional en móviles */
+    .navbar {
+        display: none;
+    }
 
-.service-card {
-    border: 1px solid #5A8CA4; /* Azul Claro */
-    border-radius: 8px;
-    margin: 10px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 400px;
-    transition: transform 0.3s, background-color 0.3s;
-}
+    /* Botón de menú hamburguesa en móviles */
+    .menu-toggle {
+        display: block;
+        font-size: 1.8em;
+        color: var(--azul-marino); /* Color de icono inicial */
+        /* background-color: var(--azul-marino); Fondo oscuro */
+        cursor: pointer;
+        margin: 10px;
+        z-index: 1001;
+        position: fixed;
+    }
 
-.service-card:hover {
-    transform: scale(1.05);
-    background-color: #1A3C56; /* Azul Marino */
-    color: white;
-}
+    /* Menú deslizante (off-canvas) */
+    .side-nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--azul-marino);
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+        z-index: 1000;
+    }
 
-.testimonials {
-    padding: 40px;
-    background-color: #F4F4F4; /* Gris Claro */
-    text-align: center;
-}
+    /* Enlaces del menú deslizante */
+    .side-nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
 
-.footer {
-    background-color: #1A3C56; /* Azul Marino */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+    /* Cerrar el menú deslizante */
+    .side-nav .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 2em;
+        color: white;
+    }
 
-.footer a {
-    color: #5A8CA4; /* Azul Claro */
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #6B8E23; /* Verde Bosque */
-}
-
-/* Estructura general para un footer sticky */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.content-wrapper {
-    flex: 1; /* Permite que este contenedor ocupe el espacio disponible */
-}
-
-/* Footer sticky */
-.footer {
-    background-color: #1A3C56; /* Azul Marino */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    flex-shrink: 0; /* Evita que el footer se reduzca */
-}
-
-.footer a {
-    color: #5A8CA4; /* Azul Claro */
-    text-decoration: none;
-}
-
-.github-logo {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-left: 5px;
-}
-
-.github-logo:hover {
-    transform: scale(1.2);
+    /* Mostrar el menú deslizante cuando está activo */
+    .side-nav.open {
+        width: 250px;
+    }
 }

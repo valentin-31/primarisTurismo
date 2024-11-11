@@ -1,25 +1,27 @@
-// scripts.js
-
-// Función para abrir modales
+// Función para abrir y cerrar modales
 function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'block';
+    modal.setAttribute('aria-hidden', 'false');
 }
 
-// Función para cerrar modales
 function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
 }
 
-// Cerrar el modal al hacer clic fuera de él
-window.onclick = function (event) {
+// Cerrar el modal al hacer clic fuera del contenido
+window.onclick = function(event) {
     const modals = document.querySelectorAll('.modal');
-    modals.forEach((modal) => {
+    modals.forEach(modal => {
         if (event.target === modal) {
-            modal.style.display = "none";
+            closeModal(modal.id);
         }
     });
 };
 
+// Suavizar el desplazamiento en enlaces internos
 document.querySelectorAll('.navbar a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         const targetId = this.getAttribute('href');
@@ -32,32 +34,30 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
     });
 });
 
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = 'block';
+// Función para abrir el menú lateral
+function openNav() {
+    document.getElementById("side-nav").classList.add("open");
 }
 
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = 'none';
+// Función para cerrar el menú lateral
+function closeNav() {
+    document.getElementById("side-nav").classList.remove("open");
 }
 
-// Cerrar el modal al hacer clic fuera del contenido
-window.onclick = function(event) {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-}
+// Toggle para abrir/cerrar el menú lateral con el botón de menú
+document.getElementById("menu-toggle").addEventListener("click", function(event) {
+    const sideNav = document.getElementById("side-nav");
+    sideNav.classList.toggle("open");
+    event.stopPropagation(); // Evita que el evento se propague y cierre el menú inmediatamente
+});
 
-function openModal(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = 'block';
-    modal.setAttribute('aria-hidden', 'false');
-}
+// Cerrar el menú lateral al hacer clic fuera de él
+document.addEventListener("click", function(event) {
+    const sideNav = document.getElementById("side-nav");
+    const menuToggle = document.getElementById("menu-toggle");
 
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = 'none';
-    modal.setAttribute('aria-hidden', 'true');
-}
+    // Verifica si el menú está abierto y si el clic fue fuera del menú o del botón de menú
+    if (sideNav.classList.contains("open") && !sideNav.contains(event.target) && event.target !== menuToggle) {
+        closeNav();
+    }
+});
