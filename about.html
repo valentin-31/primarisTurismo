@@ -17,9 +17,9 @@
 
             <!-- Contenedor de las tarjetas de información -->
             <section class="info-grid">    
-                <!-- Tarjeta 1: Historia de la Empresa -->
+                <!-- Tarjeta 1: ¿Quiénes Somos? -->
                 <div class="info-card" onclick="openModal('modal-historia')">
-                    <h2>Historia de la Empresa</h2>
+                    <h2>¿Quiénes Somos?</h2>
                 </div>
 
                 <!-- Tarjeta 2: Misión -->
@@ -37,29 +37,24 @@
                     <h2>Valores de la Empresa</h2>
                 </div>
 
-                <!-- Tarjeta 5: Análisis FODA - Fortalezas -->
-                <div class="info-card" onclick="openModal('modal-fortalezas')">
-                    <h2>FODA - Fortalezas</h2>
+                <!-- Tarjeta 5: ¿Cuál es el Público Objetivo de Primaris Turismo?-->
+                <div class="info-card" onclick="openModal('modal-publico')">
+                    <h2>¿Cuál es el Público Objetivo de Primaris Turismo?</h2>
                 </div>
 
-                <!-- Tarjeta 6: Análisis FODA - Oportunidades -->
-                <div class="info-card" onclick="openModal('modal-oportunidades')">
-                    <h2>FODA - Oportunidades</h2>
+                <!-- Tarjeta 6: ¿Qué Productos o Servicios Ofrecemos?-->
+                <div class="info-card" onclick="openModal('modal-oferta')">
+                    <h2>¿Qué Productos o Servicios Ofrecemos?</h2>
                 </div>
 
-                <!-- Tarjeta 7: Análisis FODA - Debilidades -->
-                <div class="info-card" onclick="openModal('modal-debilidades')">
-                    <h2>FODA - Debilidades</h2>
+                <!-- Tarjeta 7: ¿Cómo se Organiza Primaris Turismo?-->
+                <div class="info-card" onclick="openModal('modal-organizacion')">
+                    <h2>¿Cómo se Organiza Primaris Turismo?</h2>
                 </div>
 
-                <!-- Tarjeta 8: Análisis FODA - Amenazas -->
-                <div class="info-card" onclick="openModal('modal-amenazas')">
-                    <h2>FODA - Amenazas</h2>
-                </div>
-
-                <!-- Tarjeta 9: Áreas Funcionales -->
-                <div class="info-card" onclick="openModal('modal-areas')">
-                    <h2>Áreas Funcionales</h2>
+                <!-- Tarjeta 8: ¿Qué Oportunidades Existen para Crecer? -->
+                <div class="info-card" onclick="openModal('modal-crecimiento')">
+                    <h2>¿Qué Oportunidades Existen para Crecer?</h2>
                 </div>
             </section>
     
@@ -69,7 +64,7 @@
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-historia')">&times;</span>
                     <h2>Historia de la Empresa</h2>
-                    <p>Primaris Turismo se creó con el objetivo de conectar turistas con las experiencias únicas de Chilecito. Nuestro compromiso es impulsar la economía regional promoviendo a los artesanos y servicios locales.</p>
+                    <p>Nuestra empresa nació con un propósito claro: fortalecer el turismo en Chilecito y contribuir al crecimiento económico de nuestra comunidad. Nos apasiona mostrar la riqueza cultural y natural de nuestra región, y nos esforzamos por crear experiencias auténticas que conecten a los turistas con la esencia local./p>
                 </div>
             </div>
 
@@ -87,7 +82,7 @@
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-vision')">&times;</span>
                     <h2>Visión</h2>
-                    <p>Ser la plataforma digital líder en la promoción del turismo local y en la comercialización de productos artesanales, generando un impacto positivo en la economía de Chilecito y posicionando la ciudad como un destino turístico sostenible y reconocido a nivel nacional.</p>
+                    <p>Aspiramos a posicionar a Primaris Turismo como una plataforma líder en turismo local, reconocida por su impacto positivo en la economía de Chilecito y su compromiso con la sostenibilidad y la cultura regional.</p>
                 </div>
             </div>
 
@@ -95,61 +90,53 @@
             <div id="modal-valores" class="modal" aria-hidden="true">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-valores')">&times;</span>
-                    <h2>Valores</h2>
+                    <h2>Valores de la Empresa</h2>
                     <ul>
-                        <li><strong>Innovación:</strong> Promovemos la creatividad en nuestros servicios para brindar la mejor experiencia a turistas y emprendedores.</li>
-                        <li><strong>Colaboración:</strong> Trabajamos junto a artesanos y proveedores para construir una comunidad próspera.</li>
-                        <li><strong>Transparencia:</strong> Actuamos con integridad y claridad en nuestras relaciones.</li>
+                        <li><strong>Innovación:</strong> Ofrecemos experiencias creativas y adaptadas a las necesidades del turista moderno.</li>
+                        <li><strong>Colaboración:</strong> Trabajamos de la mano con artesanos y proveedores locales.</li>
+                        <li><strong>Compromiso con la Comunidad:</strong> Apoyamos el crecimiento y bienestar de la comunidad local.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Modal 5: Fortalezas -->
-            <div id="modal-fortalezas" class="modal" aria-hidden="true">
+            <!-- Modal 5: publico -->
+            <div id="modal-publico" class="modal" aria-hidden="true">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-fortalezas')">&times;</span>
-                    <h2>Análisis FODA - Fortalezas</h2>
-                    <p>Contamos con un equipo especializado en turismo y relaciones directas con proveedores locales, lo que nos permite ofrecer experiencias auténticas y de calidad a nuestros clientes.</p>
+                    <h2>¿Cuál es el Público Objetivo de Primaris Turismo?</h2>
+                    <p>Nuestro público objetivo incluye turistas nacionales e internacionales interesados en el turismo cultural, sostenible y local. También buscamos atraer a aquellos que valoran la autenticidad y desean conocer la historia y cultura de Chilecito.</p>
                 </div>
             </div>
 
-            <!-- Modal 6: Oportunidades -->
-            <div id="modal-oportunidades" class="modal" aria-hidden="true">
+            <!-- Modal 6: oferta -->
+            <div id="modal-oferta" class="modal" aria-hidden="true">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-oportunidades')">&times;</span>
-                    <h2>Análisis FODA - Oportunidades</h2>
-                    <p>La colaboración con entidades locales y el crecimiento del e-commerce nos abren puertas para expandir nuestro alcance y visibilidad en el mercado turístico digital.</p>
+                    <h2>¿Qué Productos o Servicios Ofrecemos?</h2>
+                    <p>Ofrecemos acceso a guías turísticas locales, hospedaje a través de conexiones con alojamientos locales y plataformas ya establecidas, artesanías auténticas hechas por la comunidad, y una guía gastronómica que destaca los sabores de la región.</p>
                 </div>
             </div>
 
-            <!-- Modal 7: Debilidades -->
-            <div id="modal-debilidades" class="modal" aria-hidden="true">
+            <!-- Modal 7: organizacion -->
+            <div id="modal-organizacion" class="modal" aria-hidden="true">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-debilidades')">&times;</span>
-                    <h2>Análisis FODA - Debilidades</h2>
-                    <p>Nuestros recursos son limitados y dependemos de terceros. Además, como una empresa nueva, carecemos de experiencia en el mercado, lo que puede ser un desafío en el proceso de crecimiento.</p>
-                </div>
-            </div>
-
-            <!-- Modal 8: Amenazas -->
-            <div id="modal-amenazas" class="modal" aria-hidden="true">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-amenazas')">&times;</span>
-                    <h2>Análisis FODA - Amenazas</h2>
-                    <p>Competimos con grandes empresas establecidas en el sector y dependemos del turismo, lo que nos expone a fluctuaciones en la demanda de servicios turísticos.</p>
-                </div>
-            </div>
-
-            <!-- Modal 9: Áreas Funcionales -->
-            <div id="modal-areas" class="modal" aria-hidden="true">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-areas')">&times;</span>
-                    <h2>Áreas Funcionales</h2>
+                    <h2>¿Cómo se Organiza Primaris Turismo?</h2>
+                    <h3>La organización se divide en tres áreas principales:</h3>
                     <ul>
                         <li><strong>Marketing y Ventas:</strong> Promoción de la plataforma y atención al cliente.</li>
-                        <li><strong>Operaciones:</strong> Gestión del contenido, relación con clientes y actualización de información sobre servicios turísticos.</li>
-                        <li><strong>Administración y Finanzas:</strong> Gestión de los recursos financieros y administrativos.</li>
+                        <li><strong>Operaciones:</strong> Gestión del contenido y relación con los clientes y proveedores locales.</li>
+                        <li><strong>Administración y Finanzas:</strong> Control y manejo de los recursos financieros y administrativos.</li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- Modal 8: crecimiento -->
+            <div id="modal-crecimiento" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-amenazas')">&times;</span>
+                    <h2>¿Qué Oportunidades Existen para Crecer?</h2>
+                    <p>Contamos con oportunidades de expansión mediante el crecimiento del turismo sostenible y las alianzas estratégicas con entidades locales. También podemos ampliar nuestra visibilidad a través de plataformas digitales y redes sociales.</p>
                 </div>
             </div>
         </main>
