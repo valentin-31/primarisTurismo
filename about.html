@@ -56,6 +56,16 @@
                 <div class="info-card" onclick="openModal('modal-crecimiento')">
                     <h2>¿Qué Oportunidades Existen para Crecer?</h2>
                 </div>
+
+                <!-- Tarjeta 9: Diagrama de PERT-->
+                <div class="info-card" onclick="openModal('modal-PERT')">
+                    <h2>Diagrama de PERT</h2>
+                </div>
+
+                <!-- Tarjeta 10: Diagrama de GANT-->
+                <div class="info-card" onclick="openModal('modal-GANT')">
+                    <h2>Diagrama de GANT</h2>
+                </div>
             </section>
     
             <!-- Modales de Contenido -->
@@ -102,25 +112,35 @@
             <!-- Modal 5: publico -->
             <div id="modal-publico" class="modal" aria-hidden="true">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-fortalezas')">&times;</span>
+                    <span class="close" onclick="closeModal('modal-publico')">&times;</span>
                     <h2>¿Cuál es el Público Objetivo de Primaris Turismo?</h2>
                     <p>Nuestro público objetivo incluye turistas nacionales e internacionales interesados en el turismo cultural, sostenible y local. También buscamos atraer a aquellos que valoran la autenticidad y desean conocer la historia y cultura de Chilecito.</p>
+                    <p>Nuestro segmento de clientes es: </p>
+                    <ul>
+                        <li><strong>Turistas: </strong>Tanto nacionales como internacionales que visitan Chilecito y necesitan información sobre actividades, hospedajes y gastronomía.</li>
+                        <li><strong>Emprendedores locales: </strong> Restaurantes, artesanos, productores, organizadores de eventos, que buscan promocionar y vender sus productos/servicios.</li>                    </ul>
                 </div>
             </div>
 
             <!-- Modal 6: oferta -->
             <div id="modal-oferta" class="modal" aria-hidden="true">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-oportunidades')">&times;</span>
+                    <span class="close" onclick="closeModal('modal-oferta')">&times;</span>
                     <h2>¿Qué Productos o Servicios Ofrecemos?</h2>
                     <p>Ofrecemos acceso a guías turísticas locales, hospedaje a través de conexiones con alojamientos locales y plataformas ya establecidas, artesanías auténticas hechas por la comunidad, y una guía gastronómica que destaca los sabores de la región.</p>
+                    <p>Nuestras gancias vienen a través de: </p>
+                    <ul>
+                        <li><strong>Monetización de tráfico: </strong>Ingresos a través de afiliaciones con plataformas de hospedaje como Airbnb o Booking.</li>
+                        <li><strong>Publicidad: </strong> Cobro a restaurantes, hoteles y otros negocios locales por posicionarse mejor en la plataforma.</li>
+                        <li><strong>Comisiones: </strong>Un porcentaje por cada transacción de productos artesanales y servicios promocionados a través de la plataforma.</li>
+                    </ul>
                 </div>
             </div>
 
             <!-- Modal 7: organizacion -->
             <div id="modal-organizacion" class="modal" aria-hidden="true">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-debilidades')">&times;</span>
+                    <span class="close" onclick="closeModal('modal-organizacion')">&times;</span>
                     <h2>¿Cómo se Organiza Primaris Turismo?</h2>
                     <h3>La organización se divide en tres áreas principales:</h3>
                     <ul>
@@ -134,11 +154,27 @@
             <!-- Modal 8: crecimiento -->
             <div id="modal-crecimiento" class="modal" aria-hidden="true">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-amenazas')">&times;</span>
+                    <span class="close" onclick="closeModal('modal-crecimiento')">&times;</span>
                     <h2>¿Qué Oportunidades Existen para Crecer?</h2>
                     <p>Contamos con oportunidades de expansión mediante el crecimiento del turismo sostenible y las alianzas estratégicas con entidades locales. También podemos ampliar nuestra visibilidad a través de plataformas digitales y redes sociales.</p>
                 </div>
             </div>
+
+            <!-- Modal 9: PERT -->
+            <div id="modal-PERT" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-PERT')">&times;</span>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRtUT-loenbfursyKk8YTdGSFdqVe3gmCEb7lGEk6nHlpKsKZnpFW2GmYjwpFn-uw/pubhtml?gid=1433098699&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600"></iframe>
+                </div>
+            </div>
+            <!-- Modal 10: GANT -->
+            <div id="modal-GANT" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-GANT')">&times;</span>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRtUT-loenbfursyKk8YTdGSFdqVe3gmCEb7lGEk6nHlpKsKZnpFW2GmYjwpFn-uw/pubhtml?gid=1779951066&amp;single=true&amp;widget=true&amp;headers=false"  width="100%" height="600"></iframe>
+                </div>
+            </div>
+            
         </main>
     </div>
     <!-- Footer -->
