@@ -204,3 +204,26 @@ body, html {
 .github-logo:hover {
     transform: scale(1.2);
 }
+
+/* Estilo para las imágenes */
+.pert-diagram, .gant-diagram {
+    max-width: 100%; /* Para que no se desborde del contenedor */
+    max-height: 80vh; /* Altura máxima para evitar que salga del modal */
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px; /* Opcional, para un diseño más suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para destacar la imagen */
+}
+
+.modal-content-img {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 95%; /* Aumenta el ancho del contenedor */
+    max-width: 90%; /* Ajusta el tamaño máximo como porcentaje de la pantalla */
+    max-height: 90vh; /* Asegura que no sobrepase la altura de la pantalla */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    overflow: auto; /* Permite desplazamiento si el contenido es muy grande */
+}

@@ -66,6 +66,11 @@
                 <div class="info-card" onclick="openModal('modal-GANT')">
                     <h2>Diagrama de GANT</h2>
                 </div>
+
+                 <!-- Tarjeta 11: CANVAS-->
+                 <div class="info-card" onclick="openModal('modal-CANVAS')">
+                    <h2>CANVAS</h2>
+                </div>
             </section>
     
             <!-- Modales de Contenido -->
@@ -162,16 +167,24 @@
 
             <!-- Modal 9: PERT -->
             <div id="modal-PERT" class="modal">
-                <div class="modal-content">
+                <div class="modal-content-img">
                     <span class="close" onclick="closeModal('modal-PERT')">&times;</span>
-                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRtUT-loenbfursyKk8YTdGSFdqVe3gmCEb7lGEk6nHlpKsKZnpFW2GmYjwpFn-uw/pubhtml?gid=1433098699&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600"></iframe>
+                    <img src="assets/PERT.png" alt="PERT diagram" class="pert-diagram">
                 </div>
             </div>
             <!-- Modal 10: GANT -->
             <div id="modal-GANT" class="modal">
-                <div class="modal-content">
+                <div class="modal-content-img">
                     <span class="close" onclick="closeModal('modal-GANT')">&times;</span>
-                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRtUT-loenbfursyKk8YTdGSFdqVe3gmCEb7lGEk6nHlpKsKZnpFW2GmYjwpFn-uw/pubhtml?gid=1779951066&amp;single=true&amp;widget=true&amp;headers=false"  width="100%" height="600"></iframe>
+                    <img src="assets/GANT.png" alt="GANT diagram" class="gant-diagram">
+                </div>
+            </div>
+
+            <!-- Modal 11: CANVAS -->
+            <div id="modal-CANVAS" class="modal">
+                <div class="modal-content-img">
+                    <span class="close" onclick="closeModal('modal-CANVAS')">&times;</span>
+                    <img src="assets/primarisTurismoCanvas.png" alt="CANVAS chart" class="canvas-diagram">
                 </div>
             </div>
             
